@@ -1,0 +1,64 @@
+.standart-button {
+    width: 118px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Lato-Black';
+    color: #45ac9d;
+    background-color: #ffff;
+    box-shadow: 0px 3px 0px 0px #4eb7a8;
+    border: 1px solid #4eb7a8;
+    transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        color: #ffff;
+        background-color: #4eb7a8;
+        box-shadow: 0px 3px 0px 0px #28a290;
+    }
+
+    &_color_tomato {
+        color: #e75735;
+        border: 1px solid #e75735;
+        box-shadow: 0px 3px 0px 0px #e75735;
+
+        &:hover {
+            background-color: #e75735;
+            box-shadow: 0px 3px 0px 0px #bf3e1f;
+        }
+    }
+
+    &_size_s {
+        width: 78px;
+        height: 22px;
+        font-size: 10px;
+    }
+
+    &:active {
+        transform: translate(0px, 5px);
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    &__circle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%) scale(0);
+        animation: scale .5s ease-out;
+    }
+
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}

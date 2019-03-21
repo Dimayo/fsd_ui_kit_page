@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: local('☺'), url('fonts/SourceSansPro-Regular.woff') format('woff'), url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('☺'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: local('☺'), url('fonts/Lato-Black.woff') format('woff'), url('fonts/Lato-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import './components/body/body.scss';
+@import './components/standart-button/standart-button.scss';

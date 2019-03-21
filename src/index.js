@@ -1,0 +1,1 @@
+import './components/standart-button/standart-button';
