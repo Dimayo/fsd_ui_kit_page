@@ -1,5 +1,6 @@
-mixin button
- button.standart-button(class="waves-effect" href=href) Button
+mixin button(name)
+ button.standart-button(class!=attributes.class)= name
 
-+button
+
+
 

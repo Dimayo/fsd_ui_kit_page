@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const webpack = require('webpack');
 
 module.exports = {
     entry: [
@@ -81,6 +82,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.pug',
             filename: 'index.html'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
     ]
 };

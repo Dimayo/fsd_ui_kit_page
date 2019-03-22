@@ -61,14 +61,63 @@
   .standart-button__circle {
     position: absolute;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.377);
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%) scale(0);
-    animation: scale .5s ease-out; }
+    animation: scale 0.6s ease-out; }
 
 @keyframes scale {
   to {
     transform: translate(-50%, -50%) scale(3);
     opacity: 0; } }
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; }
+  .arrow-buttons__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ffff;
+    border: 3px solid #4eb7a8;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    outline: none;
+    position: relative; }
+    .arrow-buttons__item:hover {
+      background-color: #4eb7a8; }
+      .arrow-buttons__item:hover .arrow-buttons__pointer {
+        border-left: 4px solid #ffff;
+        border-top: 4px solid #ffff; }
+    .arrow-buttons__item_disabled {
+      pointer-events: none;
+      background-color: #e5e5e5;
+      border: 3px solid #e5e5e5; }
+      .arrow-buttons__item_disabled .arrow-buttons__pointer {
+        border-left: 4px solid #ffff;
+        border-top: 4px solid #ffff; }
+  .arrow-buttons__pointer {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    width: 13px;
+    height: 13px;
+    border-left: 4px solid #4eb7a8;
+    border-top: 4px solid #4eb7a8;
+    transition: all 0.2s ease-out;
+    position: absolute; }
+    .arrow-buttons__pointer_left {
+      transform: rotate(-45deg) translate(0.2rem, 0.2rem);
+      top: 14px;
+      left: 12px; }
+    .arrow-buttons__pointer_right {
+      transform: rotate(135deg) translate(-0.2rem, 0.2rem);
+      top: 18px;
+      left: 10px; }
 
