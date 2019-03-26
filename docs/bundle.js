@@ -119,6 +119,18 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components/pie-chart/pie-chart.js":
+/*!***********************************************!*\
+  !*** ./src/components/pie-chart/pie-chart.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n(function pieChart() {\n  var ring = document.querySelector('.pie-chart__bar'),\n      circumference = 2 * Math.PI * ring.getAttribute('r'),\n      percentage = document.querySelector('.pie-chart__percent').textContent;\n\n  function percentageToDashOffset(n) {\n    return circumference / 100 * (100 - n);\n  }\n\n  function updateDonutValue(n) {\n    ring.setAttribute('stroke-dashoffset', percentageToDashOffset(n));\n  }\n\n  return updateDonutValue(percentage);\n})();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
+
+/***/ }),
+
 /***/ "./src/components/standart-button/standart-button.js":
 /*!***********************************************************!*\
   !*** ./src/components/standart-button/standart-button.js ***!
@@ -139,7 +151,7 @@ eval("\n\n(function rippleEffect() {\n  var buttons = document.querySelectorAll(
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./components/standart-button/standart-button */ \"./src/components/standart-button/standart-button.js\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./components/standart-button/standart-button */ \"./src/components/standart-button/standart-button.js\");\n\n__webpack_require__(/*! ./components/pie-chart/pie-chart */ \"./src/components/pie-chart/pie-chart.js\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

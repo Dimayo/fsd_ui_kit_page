@@ -12,6 +12,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Lato';
+  src: local("☺"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Lato-Black';
   src: local("☺"), url("fonts/Lato-Black.woff") format("woff"), url("fonts/Lato-Black.ttf") format("truetype");
   font-weight: normal;
@@ -120,4 +126,23 @@
       transform: rotate(135deg) translate(-0.2rem, 0.2rem);
       top: 18px;
       left: 10px; }
+
+.pie-chart {
+  position: relative; }
+  .pie-chart__image {
+    width: 100px;
+    stroke-width: 8; }
+  .pie-chart__bar {
+    stroke: #e75735;
+    stroke-dasharray: 439.82297;
+    transition: stroke-dashoffset 1s ease-out; }
+  .pie-chart__percent {
+    position: absolute;
+    top: -13%;
+    left: 27%;
+    color: #9d9d9d;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -2px; }
 

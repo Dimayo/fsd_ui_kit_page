@@ -1,0 +1,7 @@
+mixin pie-chart(percent)
+ div.pie-chart(class!=attributes.class)
+  svg.pie-chart__image(viewBox='0 0 160 160', preserveAspectRatio='xMidYMid meet', xmlns='http://www.w3.org/2000/svg')
+    g
+      title Pie-chart
+      circle.pie-chart__bar(r='70', cy='81', cx='81', fill='none', stroke-dashoffset='110', transform='rotate(-90 81 81)')
+  p.pie-chart__percent= percent

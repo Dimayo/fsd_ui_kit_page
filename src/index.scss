@@ -13,11 +13,21 @@
 }
 
 @font-face {
+    font-family: 'Lato';
+    src: local('☺'), url('fonts/Lato-Light.woff') format('woff'), url('fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Lato-Black';
     src: local('☺'), url('fonts/Lato-Black.woff') format('woff'), url('fonts/Lato-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+
+
 
 @import './components/body/body.scss';
 @import './components/standart-button/standart-button.scss';
