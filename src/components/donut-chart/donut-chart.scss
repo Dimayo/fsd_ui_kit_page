@@ -1,0 +1,18 @@
+.donut-chart__segment {
+    animation-name: fill-in;
+    animation-fill-mode: forwards;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+@keyframes fill-in {
+    from {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
