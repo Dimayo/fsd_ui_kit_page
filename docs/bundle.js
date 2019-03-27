@@ -148,7 +148,7 @@ eval("/* WEBPACK VAR INJECTION */(function($) {var segments = $(\".donut-chart__
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("(function pieChart() {\n  var ring = document.querySelector('.pie-chart__bar'),\n      circumference = 2 * Math.PI * ring.getAttribute('r'),\n      percentage = document.querySelector('.pie-chart__percent').textContent;\n\n  function percentageToDashOffset(n) {\n    return circumference / 100 * (100 - n);\n  }\n\n  function updateDonutValue(n) {\n    ring.setAttribute('stroke-dashoffset', percentageToDashOffset(n));\n  }\n\n  return updateDonutValue(percentage);\n})();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
+eval("function pieChart() {\n  var ring = document.querySelector('.pie-chart__bar'),\n      circumference = 2 * Math.PI * ring.getAttribute('r'),\n      percentage = document.querySelector('.pie-chart__percent').textContent;\n\n  function percentageToDashOffset(n) {\n    return circumference / 100 * (100 - n);\n  }\n\n  function updateDonutValue(n) {\n    ring.setAttribute('stroke-dashoffset', percentageToDashOffset(n));\n  }\n\n  return updateDonutValue(percentage);\n}\n\npieChart();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
 
 /***/ }),
 
