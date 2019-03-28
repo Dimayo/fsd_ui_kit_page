@@ -148,7 +148,7 @@ eval("/* WEBPACK VAR INJECTION */(function($) {var segments = $(\".donut-chart__
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function pieChart() {\n  var ring = document.querySelectorAll('.pie-chart__bar');\n  var percentage = document.querySelectorAll('.pie-chart__percent');\n\n  var percentageToDashOffset = function percentageToDashOffset(circumference, n) {\n    return circumference / 100 * (100 - n);\n  };\n\n  var updateDonutValue = function updateDonutValue(donut, circumference, n) {\n    return donut.setAttribute('stroke-dashoffset', percentageToDashOffset(circumference, n));\n  };\n\n  for (var i = 0; i < ring.length; i++) {\n    var circumference = 2 * Math.PI * ring[i].getAttribute('r');\n    updateDonutValue(ring[i], percentage[i].textContent);\n  }\n}\n\npieChart();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
+eval("function pieChart() {\n  var ring = document.querySelectorAll('.pie-chart__bar');\n  var percentage = document.querySelectorAll('.pie-chart__percent');\n\n  var percentageToDashOffset = function percentageToDashOffset(circumference, n) {\n    return circumference / 100 * (100 - n);\n  };\n\n  var updateDonutValue = function updateDonutValue(donut, circumference, n) {\n    return donut.setAttribute('stroke-dashoffset', percentageToDashOffset(circumference, n));\n  };\n\n  for (var i = 0; i < ring.length; i++) {\n    var circumference = 2 * Math.PI * ring[i].getAttribute('r');\n    updateDonutValue(ring[i], circumference, percentage[i].textContent);\n  }\n}\n\npieChart();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
 
 /***/ }),
 
