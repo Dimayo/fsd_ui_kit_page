@@ -1,0 +1,9 @@
+mixin range-slider
+ .range-slider(class!=attributes.class)
+   output.range-slider__output 50
+   .range-slider__track
+     .range-slider__thumb
+     .range-slider__level
+   input.range-slider__input(type='range', value='50', min='0', max='100')
+
++range-slider

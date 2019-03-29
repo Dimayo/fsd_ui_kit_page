@@ -130,36 +130,14 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/components/donut-chart/donut-chart.js":
+/***/ "./src/components/step-slider/step-slider.js":
 /*!***************************************************!*\
-  !*** ./src/components/donut-chart/donut-chart.js ***!
+  !*** ./src/components/step-slider/step-slider.js ***!
   \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {var segments = $(\".donut-chart__segment\");\nvar firstSegmentOffset = parseInt($(segments[0]).attr(\"stroke-dashoffset\"));\nvar preSegmentsTotalLength = $(segments[0]).data(\"per\");\n\nfor (var i = 0; i < segments.length; i++) {\n  var percent = $(segments[i]).data(\"per\");\n  var strokeDasharray = \"\".concat(percent, \" \").concat(100 - percent);\n  $(segments[i]).css(\"stroke-dasharray\", strokeDasharray);\n\n  if (i != 0) {\n    var strokeDashoffset = \"\".concat(100 - preSegmentsTotalLength + firstSegmentOffset);\n    $(segments[i]).css(\"stroke-dashoffset\", strokeDashoffset);\n    preSegmentsTotalLength += percent;\n  }\n}\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/components/donut-chart/donut-chart.js?");
-
-/***/ }),
-
-/***/ "./src/components/pie-chart/pie-chart.js":
-/*!***********************************************!*\
-  !*** ./src/components/pie-chart/pie-chart.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function pieChart() {\n  var ring = document.querySelectorAll('.pie-chart__bar');\n  var percentage = document.querySelectorAll('.pie-chart__percent');\n\n  var percentageToDashOffset = function percentageToDashOffset(circumference, n) {\n    return circumference / 100 * (100 - n);\n  };\n\n  var updateDonutValue = function updateDonutValue(donut, circumference, n) {\n    return donut.setAttribute('stroke-dashoffset', percentageToDashOffset(circumference, n));\n  };\n\n  for (var i = 0; i < ring.length; i++) {\n    var circumference = 2 * Math.PI * ring[i].getAttribute('r');\n    updateDonutValue(ring[i], circumference, percentage[i].textContent);\n  }\n}\n\npieChart();\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
-
-/***/ }),
-
-/***/ "./src/components/standart-button/standart-button.js":
-/*!***********************************************************!*\
-  !*** ./src/components/standart-button/standart-button.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.standart-button');\n  buttons.forEach(function (button) {\n    button.addEventListener('click', function (e) {\n      var x = e.clientX;\n      var y = e.clientY;\n      var buttonTop = e.target.offsetTop;\n      var buttonLeft = e.target.offsetLeft;\n      var xInside = x - buttonLeft;\n      var yInside = y - buttonTop;\n      var circle = document.createElement('span');\n      circle.classList.add('standart-button__circle');\n      circle.style.top = yInside + 'px';\n      circle.style.left = xInside + 'px';\n      this.appendChild(circle);\n      setTimeout(function () {\n        circle.remove();\n      }, 500);\n    });\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/standart-button/standart-button.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {var sheet = document.createElement('style'),\n    $rangeInput = $('.step-slider__input'),\n    prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];\ndocument.body.appendChild(sheet);\n\nvar getTrackStyle = function getTrackStyle(el) {\n  var curVal = el.value,\n      val = (curVal - 1) * 25,\n      style = '';\n\n  for (var i = 0; i < prefs.length; i++) {\n    style += '.step-slider__input::-' + prefs[i] + '{background: linear-gradient(to right, #4eb7a8 0%, #4eb7a8 ' + val + '%, #e5e5e5 ' + val + '%, #e5e5e5 100%)}';\n  }\n\n  return style;\n};\n\n$rangeInput.on('input', function () {\n  sheet.textContent = getTrackStyle(this);\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/components/step-slider/step-slider.js?");
 
 /***/ }),
 
@@ -171,7 +149,7 @@ eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.st
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_standart_button_standart_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/standart-button/standart-button */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_pie_chart_pie_chart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/pie-chart/pie-chart */ \"./src/components/pie-chart/pie-chart.js\");\n/* harmony import */ var _components_pie_chart_pie_chart__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_pie_chart_pie_chart__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_donut_chart_donut_chart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/donut-chart/donut-chart */ \"./src/components/donut-chart/donut-chart.js\");\n/* harmony import */ var _components_donut_chart_donut_chart__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_donut_chart_donut_chart__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/step-slider/step-slider */ \"./src/components/step-slider/step-slider.js\");\n/* harmony import */ var _components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

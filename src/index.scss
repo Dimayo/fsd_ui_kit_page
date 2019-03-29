@@ -20,17 +20,13 @@
 }
 
 @font-face {
-    font-family: 'Lato-Black';
+    font-family: 'Lato';
     src: local('☺'), url('fonts/Lato-Black.woff') format('woff'), url('fonts/Lato-Black.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
 }
 
 
 
-
 @import './components/body/body.scss';
-@import './components/standart-button/standart-button.scss';
-@import './components/arrow-buttons/arrow-buttons.scss';
-@import './components/pie-chart/pie-chart.scss';
-@import './components/donut-chart/donut-chart.scss';
+@import './components/step-slider/step-slider.scss';
