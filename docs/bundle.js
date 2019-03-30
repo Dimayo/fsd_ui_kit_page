@@ -130,14 +130,14 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/components/step-slider/step-slider.js":
-/*!***************************************************!*\
-  !*** ./src/components/step-slider/step-slider.js ***!
-  \***************************************************/
+/***/ "./src/components/stages/stages.js":
+/*!*****************************************!*\
+  !*** ./src/components/stages/stages.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {var sheet = document.createElement('style'),\n    $rangeInput = $('.step-slider__input'),\n    prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];\ndocument.body.appendChild(sheet);\n\nvar getTrackStyle = function getTrackStyle(el) {\n  var curVal = el.value,\n      val = (curVal - 1) * 25,\n      style = '';\n\n  for (var i = 0; i < prefs.length; i++) {\n    style += '.step-slider__input::-' + prefs[i] + '{background: linear-gradient(to right, #4eb7a8 0%, #4eb7a8 ' + val + '%, #e5e5e5 ' + val + '%, #e5e5e5 100%)}';\n  }\n\n  return style;\n};\n\n$rangeInput.on('input', function () {\n  sheet.textContent = getTrackStyle(this);\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/components/step-slider/step-slider.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {var container = $(\".stages\"),\n    steps = $(\".stages__step\", container),\n    bar = $(\".stages__progress\", container),\n    divider = steps.length - 1;\n\nfunction setActive(current) {\n  var fill = current - 1,\n      percent = fill * 100 / divider;\n  steps.removeClass(\"active\").eq(current - 1).addClass(\"active\");\n  bar.css({\n    width: percent + \"%\"\n  });\n}\n\nsteps.on({\n  click: function click() {\n    var index = $(this).index();\n    $(this).prevAll().addClass(\"complated\");\n    $(this).nextAll().removeClass(\"complated\");\n    setActive(index + 1);\n  }\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/components/stages/stages.js?");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ eval("/* WEBPACK VAR INJECTION */(function($) {var sheet = document.createElemen
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/step-slider/step-slider */ \"./src/components/step-slider/step-slider.js\");\n/* harmony import */ var _components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_step_slider_step_slider__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_stages_stages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/stages/stages */ \"./src/components/stages/stages.js\");\n/* harmony import */ var _components_stages_stages__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_stages_stages__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

@@ -1,1 +1,1 @@
-import './components/step-slider/step-slider';
+import './components/stages/stages';

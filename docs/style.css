@@ -29,46 +29,51 @@
   align-items: center;
   height: 800px; }
 
-.step-slider {
-  width: 261px;
-  position: relative; }
-  .step-slider__input {
-    width: 100%;
-    top: 2px;
-    height: 0;
-    -webkit-appearance: none; }
-    .step-slider__input::-webkit-slider-thumb {
-      -webkit-appearance: none;
+.stages {
+  position: relative;
+  width: 635px; }
+  .stages__bar {
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    width: 92%;
+    height: 5px;
+    background-color: #e5e5e5;
+    transform: translate(-50%, -50%); }
+  .stages__progress {
+    background-color: #e75735;
+    width: 0;
+    height: 100%;
+    transition: .3s ease-in-out; }
+  .stages__steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    counter-reset: myCounter; }
+  .stages__step {
+    position: relative;
+    list-style: none; }
+    .stages__step:hover {
+      cursor: pointer; }
+    .stages__step:before {
+      display: block;
+      content: counter(myCounter);
+      counter-increment: myCounter;
+      font-family: 'Lato';
+      font-weight: normal;
+      font-size: 14px;
       width: 20px;
       height: 20px;
-      margin: -8px 0 0;
       border-radius: 50%;
-      background: #4eb7a8;
-      cursor: pointer;
-      border: 0 !important; }
-    .step-slider__input::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 5px;
+      text-align: center;
+      color: #888888;
       background-color: #e5e5e5;
-      border-radius: 5px; }
-    .step-slider__input:focus {
-      background: none;
-      outline: none; }
-  .step-slider__ranges {
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    width: 275px;
-    top: 10px;
-    left: 0px;
-    display: flex;
-    justify-content: space-between; }
-  .step-slider__range {
-    float: left;
-    text-align: center;
-    color: #d1d1d1;
-    font-size: 11px;
-    font-family: 'Lato';
-    font-weight: 400;
-    cursor: pointer; }
+      transition: .3s ease-in-out;
+      border: 4px solid transparent; }
+    .stages__step.complated:before {
+      background-color: #e75735;
+      color: #fff; }
+    .stages__step.active:before {
+      background-color: #e75735;
+      color: #fff; }
 
