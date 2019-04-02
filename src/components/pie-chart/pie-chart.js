@@ -1,4 +1,4 @@
-function pieChart() {
+(function pieChart() {
     const ring = document.querySelectorAll('.pie-chart__bar');
     const percentage = document.querySelectorAll('.pie-chart__percent');
 
@@ -9,6 +9,5 @@ function pieChart() {
         let circumference = 2 * Math.PI * ring[i].getAttribute('r');
         updateDonutValue(ring[i], circumference, percentage[i].textContent);
     }
-}
+})();
 
-pieChart();

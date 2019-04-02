@@ -1,1 +1,1 @@
-import './components/stages/stages';
+import './components/toggle/toggle.js';

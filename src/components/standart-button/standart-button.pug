@@ -1,6 +1,3 @@
-mixin button(name)
- button.standart-button(class!=attributes.class)= name
-
-
-
+mixin standart-button(name, type)
+ button.standart-button(class!=attributes.class type= type)= name
 

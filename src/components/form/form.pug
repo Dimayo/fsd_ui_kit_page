@@ -1,0 +1,10 @@
+include ../standart-button/standart-button.pug
+
+form.form
+ input.form__name(name="name" type="text" placeholder="Your Name" required) 
+ input.form__email(name="email" type="text" placeholder="Your Email" required)
+ textarea.form__message(name="message" rows="6" cols="10"  placeholder="Your Message" resize="none")
+ +standart-button('Submit', 'submit')(class="standart-button_color_green form__standart-button")
+ .form__output-name error
+ .form__output-email error
+

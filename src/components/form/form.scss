@@ -1,0 +1,90 @@
+@mixin form-style {
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        color: #888888;
+        letter-spacing: 0.14px;
+    }
+}
+
+@mixin validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    box-sizing: border-box;
+    background-color: #e75735;
+    width: 71px;
+    height: 29px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    &::before {
+        content: '';
+        background-color: inherit;
+        height: 7px;
+        width: 7px;
+        position: absolute;
+        bottom: 11px;
+        left: -2px;
+        transform: rotate(45deg);
+        border-radius: 1px
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__name {
+        margin-bottom: 11px;
+        width: 196px;
+        height: 27px;
+        @include form-style;
+    }
+
+    &__email {
+        margin-bottom: 11px;
+        width: 196px;
+        height: 27px;
+        @include form-style;
+    }
+
+    &__message {
+        resize: none;
+        margin-bottom: 9px;
+        width: 274px;
+        height: 78px;
+        padding-top: 10px;
+        @include form-style;
+    }
+
+    &__standart-button {
+        align-self: flex-end;
+    }
+
+    &__output-name {
+        @include validation;
+        top: 0px;
+    }
+
+    &__output-email {
+        @include validation;
+        top: 40px;
+    }
+}
