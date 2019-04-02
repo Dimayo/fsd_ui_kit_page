@@ -1,1 +1,1 @@
-import './components/toggle/toggle.js';
+import './components/tick-box/tick-box.js';
