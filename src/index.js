@@ -1,1 +1,2 @@
-import './components/tick-box/tick-box.js';
+import './components/search/search.js';
+import './components/search/search.png';

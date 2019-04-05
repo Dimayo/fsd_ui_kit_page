@@ -1,4 +1,4 @@
-mixin tick-box({ isChecked = true, name = "tick-box" } = {})
+mixin tick-box({ isChecked = true, name = "tick-box" })
   .tick-box
     if isChecked
       input.tick-box__checkbox(
@@ -18,10 +18,3 @@ mixin tick-box({ isChecked = true, name = "tick-box" } = {})
       for=name
     )
   
-+tick-box({
-  name: "tick-box1"
-})
-+tick-box({ 
-  isChecked: false,
-  name: "tick-box2"
-})

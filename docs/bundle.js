@@ -119,6 +119,28 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components/search/search.js":
+/*!*****************************************!*\
+  !*** ./src/components/search/search.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function searchError() {\n  var searchButton = document.querySelector('.search__button'),\n      searchError = document.querySelector('.search__error');\n  searchButton.addEventListener('click', function (event) {\n    event.preventDefault();\n    searchError.style.opacity = '1';\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/search/search.js?");
+
+/***/ }),
+
+/***/ "./src/components/search/search.png":
+/*!******************************************!*\
+  !*** ./src/components/search/search.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/search.png\";\n\n//# sourceURL=webpack:///./src/components/search/search.png?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -127,7 +149,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './components/tick-box/tick-box.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_search_search_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/search/search.js */ \"./src/components/search/search.js\");\n/* harmony import */ var _components_search_search_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_search_search_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_search_search_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/search/search.png */ \"./src/components/search/search.png\");\n/* harmony import */ var _components_search_search_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_search_search_png__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
