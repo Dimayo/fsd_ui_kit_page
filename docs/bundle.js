@@ -119,14 +119,37 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components/user-profile/john_image.jpg":
+/*!****************************************************!*\
+  !*** ./src/components/user-profile/john_image.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/john_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/john_image.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/user-profile/sarah_image.jpg":
+/*!*****************************************************!*\
+  !*** ./src/components/user-profile/sarah_image.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/sarah_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/sarah_image.jpg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// import './components/search/search.js';\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/user-profile/john_image.jpg */ \"./src/components/user-profile/john_image.jpg\");\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/user-profile/sarah_image.jpg */ \"./src/components/user-profile/sarah_image.jpg\");\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

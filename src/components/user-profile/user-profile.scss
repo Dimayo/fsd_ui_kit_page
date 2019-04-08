@@ -1,0 +1,103 @@
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 267px;
+
+    &__photo {
+        background: url(images/sarah_image.jpg) center no-repeat;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        border: 4px solid #e5e5e5;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #4eb7a8;
+        width: 164px;
+        height: 93px;
+        border-radius: 8px;
+        font-size: 10px;
+        color: #fff;
+        font-family: 'Lato';
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.2s ease-in;
+
+        &::before {
+            content: '';
+            background-color: inherit;
+            height: 9px;
+            width: 9px;
+            position: absolute;
+            bottom: 43px;
+            left: -4px;
+            transform: rotate(45deg);
+            border-radius: 30%;
+        }
+
+        &:hover {
+            background-color: #e5e5e5;
+        }
+
+        &:hover .user-profile__title {
+            color: #e75735;
+        }
+
+        &:hover .user-profile__icon {
+            fill: #757575;
+        }
+
+        &:hover .user-profile__description {
+            color: #4f4f4f;
+        }
+
+        &:hover .user-profile__image:hover .user-profile__icon {
+            fill: #e75735;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 2px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-family: 'Lato';
+        font-weight: 400;
+        text-transform: none;
+        text-align: center;
+        margin: 0;
+        transition: all 0.2s ease-in;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 11px;
+        margin: 0;
+        font-family: 'Lato';
+        font-weight: 400;
+        transition: all 0.2s ease-in;
+
+    }
+
+    &__social {
+        width: 73%;
+        height: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__icon {
+        transition: all 0.2s ease-in;
+    }
+
+}
