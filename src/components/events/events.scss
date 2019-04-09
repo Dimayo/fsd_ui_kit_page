@@ -1,0 +1,54 @@
+.events {
+    width: 288px;
+    height: 212px;
+    background-color: #4eb7a8;
+    display: flex;
+    border-radius: 4px;
+
+    &__photo {
+        width: 95px;
+        height: 212px;
+    }
+
+    &__info {
+        padding: 0 21px 0 21px;
+    }
+
+    &__date {
+        font-family: 'Lato';
+        font-size: 30px;
+        font-weight: 300;
+        color: #ffffff;
+        margin: 5px 0 8px -3px;
+        padding:0;
+    }
+
+    &__number {
+        font-size: 73px;
+        letter-spacing: -2.92px;
+        padding-right: 10px;
+    }
+
+    &__title {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: 'Lato';
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: 11px;
+        font-family: 'Lato';
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        color: #ffffff;
+        margin: 3px 0 18px 0;
+    }
+
+    &__standart-button {
+       margin-left: 10px;
+    }
+}

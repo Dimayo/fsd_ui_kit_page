@@ -1,5 +1,6 @@
-.toggle
-  input.toggle__checkbox(type='checkbox', name='onoffswitch', checked='', id="toggle__checkbox")
-  label.toggle__label(for='toggle__checkbox')
-    span.toggle__inner
-    span.toggle__switch
+mixin toggle
+ .toggle(class!=attributes.class)
+   input.toggle__checkbox(type='checkbox', name='onoffswitch', checked='', id="toggle__checkbox")
+   label.toggle__label(for='toggle__checkbox')
+     span.toggle__inner
+     span.toggle__switch

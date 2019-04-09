@@ -119,25 +119,25 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/components/user-profile/john_image.jpg":
-/*!****************************************************!*\
-  !*** ./src/components/user-profile/john_image.jpg ***!
-  \****************************************************/
+/***/ "./src/components/events/events.jpg":
+/*!******************************************!*\
+  !*** ./src/components/events/events.jpg ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"images/john_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/john_image.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/events.jpg\";\n\n//# sourceURL=webpack:///./src/components/events/events.jpg?");
 
 /***/ }),
 
-/***/ "./src/components/user-profile/sarah_image.jpg":
-/*!*****************************************************!*\
-  !*** ./src/components/user-profile/sarah_image.jpg ***!
-  \*****************************************************/
+/***/ "./src/components/standart-button/standart-button.js":
+/*!***********************************************************!*\
+  !*** ./src/components/standart-button/standart-button.js ***!
+  \***********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("module.exports = __webpack_require__.p + \"images/sarah_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/sarah_image.jpg?");
+eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.standart-button');\n  buttons.forEach(function (button) {\n    button.addEventListener('click', function (e) {\n      var x = e.clientX;\n      var y = e.clientY;\n      var buttonTop = e.target.offsetTop;\n      var buttonLeft = e.target.offsetLeft;\n      var xInside = x - buttonLeft;\n      var yInside = y - buttonTop;\n      var circle = document.createElement('span');\n      circle.classList.add('standart-button__circle');\n      circle.style.top = yInside + 'px';\n      circle.style.left = xInside + 'px';\n      this.appendChild(circle);\n      setTimeout(function () {\n        circle.remove();\n      }, 500);\n    });\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/standart-button/standart-button.js?");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ eval("module.exports = __webpack_require__.p + \"images/sarah_image.jpg\";\n\n//
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/user-profile/john_image.jpg */ \"./src/components/user-profile/john_image.jpg\");\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/user-profile/sarah_image.jpg */ \"./src/components/user-profile/sarah_image.jpg\");\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_events_events_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/events/events.jpg */ \"./src/components/events/events.jpg\");\n/* harmony import */ var _components_events_events_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_events_events_jpg__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

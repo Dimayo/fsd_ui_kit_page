@@ -1,0 +1,7 @@
+mixin news(image, title, date, text)
+ .news(class!=attributes.class)
+  img.news__photo(src= image)
+  .news__info
+   h2.news__title= title
+   h3.news__date= date
+   p.news__text= text

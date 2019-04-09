@@ -1,0 +1,12 @@
+include ../standart-button/standart-button.pug
+
+mixin events(image, date, month, title, text)
+ .events(class!=attributes.class)
+  img.events__photo(src= image)
+  .events__info
+   h2.events__date 
+    span.events__number= date
+    | #{month}
+   h3.events__title= title
+   p.events__text= text
+   +standart-button('add to calendar', 'button')(class="standart-button_size_s events__standart-button")

@@ -1,3 +1,5 @@
-import './components/user-profile/john_image.jpg';
-import './components/user-profile/sarah_image.jpg';
+import './components/standart-button/standart-button.js';
+import './components/events/events.jpg';
+
+
 
