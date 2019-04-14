@@ -1,5 +1,1 @@
-import './components/location/location.js';
-
-
-
-
+import './components/calendar/calendar.js';
