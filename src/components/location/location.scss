@@ -46,21 +46,21 @@
     }
 
     &__mylocation-button {
-        border:none;
+        border: none;
         background: transparent;
         background-image: url(images/target.png);
-        width:27px;
+        width: 27px;
         height: 26px;
     }
 
     &__pin-button {
-            border:none;
-            background: transparent;
-            background-image: url(images/pin.png);
-            width:18px;
-            height: 24px;
-            background-repeat: no-repeat;
-            margin: 0 25px 0 22px;
+        border: none;
+        background: transparent;
+        background-image: url(images/pin.png);
+        width: 18px;
+        height: 24px;
+        background-repeat: no-repeat;
+        margin: 0 25px 0 22px;
     }
 }
 
