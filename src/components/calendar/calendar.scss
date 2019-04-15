@@ -65,6 +65,10 @@
         text-align: center;
     }
 
+      &__today {
+          background-color: #e756358c;
+          color: white
+      }
 
     &__day {
         width: 37px;
@@ -92,12 +96,6 @@
         letter-spacing: -3.2px;
         font-family: 'Lato';
         font-weight: 300;
-    }
-
-
-    &__today {
-        background-color: #e756358c;
-        color: white
     }
 
     &__footer {

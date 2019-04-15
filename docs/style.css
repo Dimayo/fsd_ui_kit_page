@@ -84,6 +84,10 @@
   height: 27px;
   text-align: center; }
 
+.calendar__today {
+  background-color: #e756358c;
+  color: white; }
+
 .calendar__day {
   width: 37px;
   height: 37px;
@@ -107,10 +111,6 @@
   letter-spacing: -3.2px;
   font-family: 'Lato';
   font-weight: 300; }
-
-.calendar__today {
-  background-color: #e756358c;
-  color: white; }
 
 .calendar__footer {
   font-size: 13px;

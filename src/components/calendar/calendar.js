@@ -103,6 +103,8 @@ var Calendar = (function () {
         var _this = this;
         //get calendar body
         var firstDay = (new Date(this.selectYear, this.selectMonth)).getDay();
+        var lastDay = (new Date(this.selectYear, this.selectMonth + 1, 0)).getDate();
+        var lastDayOfLastMonth = this.selectMonth == 0 ? new Date(this.selectYear - 1, 11, 0).getDate() : new Date(this.selectYear, this.selectMonth, 0).getDate();
         var tbl = document.createElement('tbody');
         tbl.classList.add('calendar__body');
         tbl.innerHTML = "";
@@ -123,15 +125,15 @@ var Calendar = (function () {
                     row.appendChild(cell);
                 } else if (date > this_1.daysInMonth(this_1.selectMonth, this_1.selectYear)) {
                     return "break";
-                } else {
+                }else {
                     var cell = document.createElement("td");
                     cell.classList.add('calendar__cell');
                     var cellText = document.createTextNode('' + date + '');
                     if (date === this_1.today.getDate() && this_1.selectYear === this_1.today.getFullYear() && this_1.selectMonth === this_1.today.getMonth()) {
                         cell.innerHTML = date;
-                        cell.classList.add('calendar__day_selected');
                         cell.classList.add('calendar__day');
                         cell.classList.add('calendar__today');
+                        cell.classList.add('calendar__day_selected');
                     } // color today's date
                     else {
                         cell.innerHTML = date;
