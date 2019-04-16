@@ -1,16 +1,17 @@
 include ../standart-button/standart-button.pug
 
-.messaging
- .messaging__header
-  h2.messaging__title Sarah Brown
-  img.messaging__photo(src= 'images/sarah_image.jpg')
- .messaging__block
- .messaging__body
-  .messaging__social
-   button.messaging__chat-button
-   button.messaging__camera-button
-  .messaging__inner
-   .messaging__bubble
-    p.messaging__text Hey! So are we cool to meet at the art gallery? Say 8pm
-   textarea.messaging__input
-   +standart-button('Reply','submit')(class='standart-button_color_green standart-button_width_long')
+mixin messaging(class!=attributes.class)
+ .messaging
+  .messaging__header
+   h2.messaging__title Sarah Brown
+   img.messaging__photo(src= 'images/sarah_image.jpg')
+  .messaging__block
+  .messaging__body
+   .messaging__social
+    button.messaging__chat-button
+    button.messaging__camera-button
+   .messaging__inner
+    .messaging__bubble
+     p.messaging__text Hey! So are we cool to meet at the art gallery? Say 8pm
+    textarea.messaging__input
+    +standart-button('Reply','submit')(class='standart-button_color_green standart-button_width_long')
