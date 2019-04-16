@@ -76,9 +76,14 @@ module.exports = {
             filename: 'style.css'
         }),
         new CopyWebpackPlugin([{
-            from: './src/fonts',
-            to: './fonts'
-        }]),
+                from: './src/fonts',
+                to: './fonts'
+            },
+            {
+                from: './src/video',
+                to: './video'
+            }
+        ]),
         new HtmlWebpackPlugin({
             template: './src/index.pug',
             filename: 'index.html'
