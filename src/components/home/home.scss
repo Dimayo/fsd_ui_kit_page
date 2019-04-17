@@ -1,0 +1,25 @@
+.home {
+    height: 100vh;
+    background-image: linear-gradient(to top, #ffb085, #ffb085, #ffb085, #ffb085, #ffb085, #fda97d, #fca275, #fa9b6e, #f68b5e, #f17b50, #ec6a42, #e75735);
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70vh;
+    }
+
+    &__intro {
+        width: 650px;
+    }
+
+    &__title {
+        font-size: 74px;
+        font-family: "Lato";
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+    }
+}
