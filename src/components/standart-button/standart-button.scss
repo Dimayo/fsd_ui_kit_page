@@ -16,10 +16,11 @@
     align-items: center;
     cursor: pointer;
     outline: none;
-    overflow: hidden;
     letter-spacing: 0.6px;
     padding: 0 14px 0 14px;
     word-spacing: 3px;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
         color: #ffff;
@@ -51,8 +52,19 @@
         box-shadow: 0px 2px 0px 0px #28a290;
     }
 
+    &_size_xl {
+        min-width: 300px;
+        height: 55px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding: 0 16px 0 16px;
+        box-shadow: 0px 4px 0px 0px #28a290;
+    }
+
+
+
     &_width_long {
-        width:100%;
+        width: 100%;
     }
 
     &:active {

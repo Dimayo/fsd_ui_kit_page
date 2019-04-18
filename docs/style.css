@@ -32,13 +32,14 @@
   justify-content: space-between;
   align-items: flex-end;
   background-color: transparent;
-  height: 80px; }
+  height: 80px;
+  color: #fff; }
   .navigation__inner {
     display: flex;
     margin: 0 2% 0 10%; }
   .navigation__logo-text {
     vertical-align: middle;
-    color: #fff;
+    color: inherit;
     font-family: "Lato";
     font-weight: 400;
     font-size: 30px;
@@ -46,32 +47,132 @@
     margin: 0;
     padding: 0; }
   .navigation__items {
-    margin: 0 9%; }
+    margin: 0 9%;
+    display: flex; }
   .navigation__item {
-    color: #fff;
+    color: inherit;
     font-size: 16px;
     font-family: "Lato";
     font-weight: 300;
     text-transform: uppercase;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
     margin: 0 30px;
-    text-decoration: none; }
+    text-align: center;
+    transition: all 0.3s ease-in;
+    border: 1px solid transparent;
+    position: relative; }
+    .navigation__item:after {
+      background-color: #4eb7a8;
+      display: block;
+      content: "";
+      height: 3px;
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      position: absolute;
+      transition: width .3s ease-in-out;
+      transform: translateX(-50%); }
+    .navigation__item:hover:after {
+      width: 100%; }
 
 .home {
   height: 100vh;
-  background-image: linear-gradient(to top, #ffb085, #ffb085, #ffb085, #ffb085, #ffb085, #fda97d, #fca275, #fa9b6e, #f68b5e, #f17b50, #ec6a42, #e75735); }
+  background-image: linear-gradient(to top, #c3371a, #ca3d1f, #d04324, #d74929, #de4f2e, #e15230, #e45433, #e75735, #e75735, #e75735, #e75735, #e75735); }
   .home__inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70vh; }
+    height: 80vh;
+    margin-top: 100px;
+    max-width: 1550px;
+    margin: auto; }
   .home__intro {
     width: 650px; }
   .home__title {
     font-size: 74px;
     font-family: "Lato";
-    font-weight: 900;
+    font-weight: 600;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px;
-    word-spacing: 10px; }
+    word-spacing: 10px;
+    line-height: 1.1;
+    margin: 0 0 25px 0; }
+  .home__text {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Lato";
+    font-weight: 300;
+    margin: 0 0 50px 0; }
+
+.standart-button {
+  min-width: 118px;
+  height: 32px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #45ac9d;
+  background-color: #ffff;
+  box-shadow: 0px 3px 0px 0px #28a290;
+  border: 1px solid #4eb7a8;
+  transition: all 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.6px;
+  padding: 0 14px 0 14px;
+  word-spacing: 3px;
+  position: relative;
+  overflow: hidden; }
+  .standart-button:hover {
+    color: #ffff;
+    background-color: #4eb7a8; }
+  .standart-button_color_tomato {
+    color: #e75735;
+    border: 1px solid #e75735;
+    box-shadow: 0px 3px 0px 0px #e75735; }
+    .standart-button_color_tomato:hover {
+      background-color: #e75735;
+      box-shadow: 0px 3px 0px 0px #bf3e1f; }
+  .standart-button_color_green {
+    color: #ffff;
+    background-color: #4eb7a8; }
+  .standart-button_size_s {
+    min-width: 78px;
+    height: 22px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 0 11px 0 11px;
+    box-shadow: 0px 2px 0px 0px #28a290; }
+  .standart-button_size_xl {
+    min-width: 300px;
+    height: 55px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 0 16px 0 16px;
+    box-shadow: 0px 4px 0px 0px #28a290; }
+  .standart-button_width_long {
+    width: 100%; }
+  .standart-button:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 0px 0px 0px; }
+  .standart-button__circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.377);
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.6s ease-out; }
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0; } }
 

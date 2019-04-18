@@ -4,6 +4,7 @@
     align-items: flex-end;
     background-color: transparent;
     height: 80px;
+    color: #fff;
 
     &__inner {
         display: flex;
@@ -12,26 +13,51 @@
 
     &__logo-text {
         vertical-align: middle;
-        color: #fff;
+        color: inherit;
         font-family: "Lato";
         font-weight: 400;
         font-size: 30px;
         text-transform: uppercase;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
 
     &__items {
-        margin:0 9%;
+        margin: 0 9%;
+        display: flex;
     }
 
     &__item {
-        color:#fff;
+        color: inherit;
         font-size: 16px;
         font-family: "Lato";
         font-weight: 300;
         text-transform: uppercase;
-        margin:0 30px;
+        padding: 20px 0;
         text-decoration: none;
+        display: block;
+        margin: 0 30px;
+        text-align: center;
+        transition: all 0.3s ease-in;
+        border: 1px solid transparent;
+        position: relative;
+
+        &:after {
+            background-color: #4eb7a8;
+            display: block;
+            content: "";
+            height: 3px;
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            position: absolute;
+            transition: width .3s ease-in-out;
+            transform: translateX(-50%)
+        }
+
+        &:hover:after {
+            width: 100%
+        }
+
     }
 }

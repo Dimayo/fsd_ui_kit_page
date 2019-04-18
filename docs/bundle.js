@@ -141,6 +141,17 @@ eval("module.exports = __webpack_require__.p + \"images/logo.svg\";\n\n//# sourc
 
 /***/ }),
 
+/***/ "./src/components/standart-button/standart-button.js":
+/*!***********************************************************!*\
+  !*** ./src/components/standart-button/standart-button.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.standart-button');\n  buttons.forEach(function (button) {\n    button.addEventListener('click', function (e) {\n      var x = e.clientX;\n      var y = e.clientY;\n      var buttonTop = e.target.offsetTop;\n      var buttonLeft = e.target.offsetLeft;\n      var xInside = x - buttonLeft;\n      var yInside = y - buttonTop;\n      var circle = document.createElement('span');\n      circle.classList.add('standart-button__circle');\n      circle.style.top = yInside + 'px';\n      circle.style.left = xInside + 'px';\n      this.appendChild(circle);\n      setTimeout(function () {\n        circle.remove();\n      }, 500);\n    });\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/standart-button/standart-button.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -149,7 +160,7 @@ eval("module.exports = __webpack_require__.p + \"images/logo.svg\";\n\n//# sourc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navigation/logo.svg */ \"./src/components/navigation/logo.svg\");\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navigation/logo.svg */ \"./src/components/navigation/logo.svg\");\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
