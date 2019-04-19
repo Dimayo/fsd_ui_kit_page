@@ -1,6 +1,7 @@
 .home {
     height: 100vh;
     background-image: linear-gradient(to top, #c3371a, #ca3d1f, #d04324, #d74929, #de4f2e, #e15230, #e45433, #e75735, #e75735, #e75735, #e75735, #e75735);
+    display: block;
 
     &__inner {
         display: flex;
@@ -35,6 +36,19 @@
         font-family: "Lato";
         font-weight: 300;
         margin:0 0 50px 0;
+    }
+
+    &__link {
+        position: absolute;
+        color:#fff;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: 300;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        text-decoration: none;
+        right: 9%;
+        bottom:10%;
     }
 
 

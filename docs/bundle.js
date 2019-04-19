@@ -119,6 +119,28 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components/body/background.jpg":
+/*!********************************************!*\
+  !*** ./src/components/body/background.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/background.jpg\";\n\n//# sourceURL=webpack:///./src/components/body/background.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/body/body.js":
+/*!*************************************!*\
+  !*** ./src/components/body/body.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function changePage() {\n  var home = document.querySelector(\".home\"),\n      about = document.querySelector(\".about\"),\n      portfolio = document.querySelector(\".portfolio\"),\n      links = document.querySelectorAll(\".navigation__item\"),\n      buttons = document.querySelectorAll(\".standart-button\");\n  links[0].addEventListener(\"click\", function (event) {\n    event.preventDefault();\n    home.style.display = \"block\";\n    about.style.display = \"none\";\n    portfolio.style.display = \"none\";\n  });\n  links[1].addEventListener(\"click\", function (event) {\n    event.preventDefault();\n    home.style.display = \"none\";\n    about.style.display = \"block\";\n    portfolio.style.display = \"none\";\n  });\n  links[2].addEventListener(\"click\", function (event) {\n    event.preventDefault();\n    home.style.display = \"none\";\n    about.style.display = \"none\";\n    portfolio.style.display = \"block\";\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/body/body.js?");
+
+/***/ }),
+
 /***/ "./src/components/home/home.png":
 /*!**************************************!*\
   !*** ./src/components/home/home.png ***!
@@ -127,17 +149,6 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"images/home.png\";\n\n//# sourceURL=webpack:///./src/components/home/home.png?");
-
-/***/ }),
-
-/***/ "./src/components/navigation/logo.svg":
-/*!********************************************!*\
-  !*** ./src/components/navigation/logo.svg ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"images/logo.svg\";\n\n//# sourceURL=webpack:///./src/components/navigation/logo.svg?");
 
 /***/ }),
 
@@ -152,6 +163,28 @@ eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.st
 
 /***/ }),
 
+/***/ "./src/components/user-profile/john_image.jpg":
+/*!****************************************************!*\
+  !*** ./src/components/user-profile/john_image.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/john_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/john_image.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/user-profile/sarah_image.jpg":
+/*!*****************************************************!*\
+  !*** ./src/components/user-profile/sarah_image.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/sarah_image.jpg\";\n\n//# sourceURL=webpack:///./src/components/user-profile/sarah_image.jpg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -160,7 +193,7 @@ eval("(function rippleEffect() {\n  var buttons = document.querySelectorAll('.st
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navigation/logo.svg */ \"./src/components/navigation/logo.svg\");\n/* harmony import */ var _components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_navigation_logo_svg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/body/body.js */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_body_body_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_body_background_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/body/background.jpg */ \"./src/components/body/background.jpg\");\n/* harmony import */ var _components_body_background_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_body_background_jpg__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/user-profile/sarah_image.jpg */ \"./src/components/user-profile/sarah_image.jpg\");\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/user-profile/john_image.jpg */ \"./src/components/user-profile/john_image.jpg\");\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
