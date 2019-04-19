@@ -2,13 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: transparent;
-    height: 80px;
+    height: 8vh;
     color: #fff;
-
-    &_color_gray {
-      color: #888888;
-    }
+    background-color: #e75735;
 
     &__inner {
         display: flex;
@@ -16,7 +12,7 @@
         padding: 20px 0;
     }
 
-   
+
     &__logo-text {
         vertical-align: middle;
         color: inherit;
@@ -25,7 +21,7 @@
         font-size: 30px;
         text-transform: uppercase;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
 
     &__items {
@@ -47,6 +43,7 @@
         transition: all 0.3s ease-in;
         border: 1px solid transparent;
         position: relative;
+        cursor: pointer;
 
         &:after {
             background-color: #4eb7a8;

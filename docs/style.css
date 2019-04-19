@@ -51,6 +51,12 @@
     transform: translateY(0px);
     opacity: 1; } }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 .standart-button {
   min-width: 118px;
   height: 32px;
@@ -198,11 +204,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: transparent;
-  height: 80px;
-  color: #fff; }
-  .navigation_color_gray {
-    color: #888888; }
+  height: 8vh;
+  color: #fff;
+  background-color: #e75735; }
   .navigation__inner {
     display: flex;
     margin: 0 2% 0 10%;
@@ -232,7 +236,8 @@
     text-align: center;
     transition: all 0.3s ease-in;
     border: 1px solid transparent;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .navigation__item:after {
       background-color: #4eb7a8;
       display: block;
@@ -248,9 +253,8 @@
       width: 100%; }
 
 .home {
-  height: 100vh;
-  background-image: linear-gradient(to top, #c3371a, #ca3d1f, #d04324, #d74929, #de4f2e, #e15230, #e45433, #e75735, #e75735, #e75735, #e75735, #e75735);
-  display: block; }
+  height: 92vh;
+  background-image: linear-gradient(to top, #c3371a, #ca3d1f, #d04324, #d74929, #de4f2e, #e15230, #e45433, #e75735, #e75735, #e75735, #e75735, #e75735); }
   .home__inner {
     display: flex;
     justify-content: space-around;
@@ -290,10 +294,8 @@
     bottom: 10%; }
 
 .about {
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  height: 100vh;
-  display: none; }
+  height: 92vh;
+  background-image: linear-gradient(to top, #b2b2b2, #bbbbbb, #c5c5c5, #cecece, #d8d8d8, #dcdcdc, #e1e1e1, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5); }
   .about__inner {
     display: flex;
     justify-content: space-around;
@@ -323,5 +325,10 @@
     margin: 0 0 30px 0; }
 
 .portfolio {
-  display: none; }
+  background-image: linear-gradient(to top, #b2b2b2, #bbbbbb, #c5c5c5, #cecece, #d8d8d8, #dcdcdc, #e1e1e1, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5);
+  height: 92vh; }
+
+.contacts {
+  background-image: linear-gradient(to top, #b2b2b2, #bbbbbb, #c5c5c5, #cecece, #d8d8d8, #dcdcdc, #e1e1e1, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5);
+  height: 92vh; }
 

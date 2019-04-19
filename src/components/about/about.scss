@@ -1,8 +1,6 @@
 .about {
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 100vh;
-    display:none;
+    height: 92vh;
+    background-image: linear-gradient(to top, #b2b2b2, #bbbbbb, #c5c5c5, #cecece, #d8d8d8, #dcdcdc, #e1e1e1, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5, #e5e5e5);
 
     &__inner {
         display: flex;

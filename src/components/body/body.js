@@ -1,30 +1,36 @@
 (function changePage() {
 
-    const home = document.querySelector(".home"),
-        about = document.querySelector(".about"),
-        portfolio = document.querySelector(".portfolio"),
-        links = document.querySelectorAll(".navigation__item"),
-        buttons = document.querySelectorAll(".standart-button");
+    const links = document.querySelectorAll(".navigation__item"),
+        pages = document.querySelectorAll(".page"),
+        info = document.querySelector(".navigation__items");
+        
 
-    links[0].addEventListener("click", function (event) {
-        event.preventDefault();
-        home.style.display = "block";
-        about.style.display = "none";
-        portfolio.style.display = "none";
-    });
+    function hidePages(a) {
+        for (let i = a; i < pages.length; i++) {
+            pages[i].classList.remove("show");
+            pages[i].classList.add("hide");
+        }
+    }
 
-    links[1].addEventListener("click", function (event) {
-        event.preventDefault();
-        home.style.display = "none";
-        about.style.display = "block";
-        portfolio.style.display = "none";
-    });
+    hidePages(1);
 
-    links[2].addEventListener("click", function (event) {
-        event.preventDefault();
-        home.style.display = "none";
-        about.style.display = "none";
-        portfolio.style.display = "block";
+    function showPages(b) {
+        if (pages[b].classList.contains("hide")) {
+            pages[b].classList.remove("hide");
+            pages[b].classList.add("show");
+        }
+    }
+
+    info.addEventListener("click", function (event) {
+        let target = event.target;
+        if (target && target.classList.contains("navigation__item")) {
+            for (let i = 0; i < links.length; i++) {
+                if (target == links[i]) {
+                    hidePages(0);
+                    showPages(i);
+                    break;
+                }
+            }
+        }
     });
 })();
-
