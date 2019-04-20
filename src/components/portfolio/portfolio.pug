@@ -1,3 +1,15 @@
-
+include ../news/news.pug
+include ../standart-button/standart-button.pug
 
 section.portfolio.page
+ .portfolio__inner
+  .portfolio__items
+   h2.portfolio__title.fade-left Our works
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-left")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-bottom")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-bottom")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="news_size_xl portfolio__news fade-left")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-left")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-bottom")
+   +news("images/news.jpg", "It’s all going downhill", "24  AUGUST  2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum   aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")(class="fade-bottom")
+   +standart-button("all projects", "button")(class="standart-button_width_long standart-button_color_green fade-bottom portfolio__standart-button")

@@ -5,6 +5,10 @@
     display: flex;
     border-radius: 4px;
 
+    &_size_xl {
+        width: 100%;
+    }
+
     &__photo {
         width: 95px;
         height: 212px;

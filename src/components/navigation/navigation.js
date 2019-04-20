@@ -15,4 +15,16 @@
         nav.style.color = "#868686";
         logo.style.fill = "#868686";
     });
+
+    links[2].addEventListener("click", function () {
+        nav.style.backgroundColor = "#e5e5e5";
+        nav.style.color = "#868686";
+        logo.style.fill = "#868686";
+    });
+
+    links[3].addEventListener("click", function () {
+        nav.style.backgroundColor = "#e5e5e5";
+        nav.style.color = "#868686";
+        logo.style.fill = "#868686";
+    });
 })();
