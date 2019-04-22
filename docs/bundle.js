@@ -163,6 +163,50 @@ eval("module.exports = __webpack_require__.p + \"images/news.jpg\";\n\n//# sourc
 
 /***/ }),
 
+/***/ "./src/components/portfolio/first_project.jpg":
+/*!****************************************************!*\
+  !*** ./src/components/portfolio/first_project.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/first_project.jpg\";\n\n//# sourceURL=webpack:///./src/components/portfolio/first_project.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/portfolio/fourth_project.jpg":
+/*!*****************************************************!*\
+  !*** ./src/components/portfolio/fourth_project.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/fourth_project.jpg\";\n\n//# sourceURL=webpack:///./src/components/portfolio/fourth_project.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/portfolio/second_project.jpg":
+/*!*****************************************************!*\
+  !*** ./src/components/portfolio/second_project.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/second_project.jpg\";\n\n//# sourceURL=webpack:///./src/components/portfolio/second_project.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/portfolio/third_project.jpg":
+/*!****************************************************!*\
+  !*** ./src/components/portfolio/third_project.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/third_project.jpg\";\n\n//# sourceURL=webpack:///./src/components/portfolio/third_project.jpg?");
+
+/***/ }),
+
 /***/ "./src/components/standart-button/standart-button.js":
 /*!***********************************************************!*\
   !*** ./src/components/standart-button/standart-button.js ***!
@@ -204,7 +248,7 @@ eval("module.exports = __webpack_require__.p + \"images/sarah_image.jpg\";\n\n//
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/body/body.js */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_body_body_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navigation/navigation.js */ \"./src/components/navigation/navigation.js\");\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_3__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './components/body/background.jpg'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/user-profile/sarah_image.jpg */ \"./src/components/user-profile/sarah_image.jpg\");\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/user-profile/john_image.jpg */ \"./src/components/user-profile/john_image.jpg\");\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/news/news.jpg */ \"./src/components/news/news.jpg\");\n/* harmony import */ var _components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/body/body.js */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_body_body_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/standart-button/standart-button.js */ \"./src/components/standart-button/standart-button.js\");\n/* harmony import */ var _components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_standart_button_standart_button_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navigation/navigation.js */ \"./src/components/navigation/navigation.js\");\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home/home.png */ \"./src/components/home/home.png\");\n/* harmony import */ var _components_home_home_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_home_home_png__WEBPACK_IMPORTED_MODULE_3__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './components/body/background.jpg'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/user-profile/sarah_image.jpg */ \"./src/components/user-profile/sarah_image.jpg\");\n/* harmony import */ var _components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_sarah_image_jpg__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/user-profile/john_image.jpg */ \"./src/components/user-profile/john_image.jpg\");\n/* harmony import */ var _components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_user_profile_john_image_jpg__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/news/news.jpg */ \"./src/components/news/news.jpg\");\n/* harmony import */ var _components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_news_news_jpg__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _components_portfolio_first_project_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/portfolio/first_project.jpg */ \"./src/components/portfolio/first_project.jpg\");\n/* harmony import */ var _components_portfolio_first_project_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_portfolio_first_project_jpg__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _components_portfolio_second_project_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/portfolio/second_project.jpg */ \"./src/components/portfolio/second_project.jpg\");\n/* harmony import */ var _components_portfolio_second_project_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_portfolio_second_project_jpg__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _components_portfolio_third_project_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/portfolio/third_project.jpg */ \"./src/components/portfolio/third_project.jpg\");\n/* harmony import */ var _components_portfolio_third_project_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_portfolio_third_project_jpg__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _components_portfolio_fourth_project_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/portfolio/fourth_project.jpg */ \"./src/components/portfolio/fourth_project.jpg\");\n/* harmony import */ var _components_portfolio_fourth_project_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_portfolio_fourth_project_jpg__WEBPACK_IMPORTED_MODULE_11__);\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
