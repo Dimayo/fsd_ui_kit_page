@@ -23,7 +23,7 @@
     });
 
     links[3].addEventListener("click", function () {
-        nav.style.backgroundColor = "#e5e5e5";
+        nav.style.backgroundColor = "#fff";
         nav.style.color = "#868686";
         logo.style.fill = "#868686";
     });

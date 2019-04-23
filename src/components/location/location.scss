@@ -1,17 +1,21 @@
 .location {
     display: flex;
     flex-direction: column;
+    width: 593px;
+
+    &_width_short {
+        width: 420px;
+    }
+  
 
     &__map {
         height: 204px;
-        width: 593px;
         z-index: 1;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
 
     &__menu {
-        width: 593px;
         height: 69px;
         background-color: #e75735;
         z-index: 2;
