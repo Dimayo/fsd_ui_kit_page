@@ -519,7 +519,7 @@
         font-size: 60px;
         word-spacing: 8px;
         letter-spacing: 2px; } }
-    @media (max-width: 1250px) {
+    @media (max-width: 1050px) {
       .home__title {
         font-size: 50px;
         word-spacing: 5px; } }
@@ -531,10 +531,10 @@
     margin: 0 0 50px 0; }
     @media (max-width: 1250px) {
       .home__text {
-        font-size: 18px; } }
-    @media (max-width: 1250px) {
+        font-size: 20px; } }
+    @media (max-width: 1050px) {
       .home__text {
-        font-size: 16px; } }
+        font-size: 18px; } }
   .home__link {
     position: absolute;
     color: #fff;
