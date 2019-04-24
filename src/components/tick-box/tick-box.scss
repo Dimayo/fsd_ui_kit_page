@@ -4,7 +4,6 @@
     width: 30px;
     height: 30px;
 
-
     &__checkbox {
         display: none;
 
@@ -29,6 +28,7 @@
             height: 100%;
             width: 100%;
             transition: 0.4s;
+            right: 0;
         }
 
         &::after {

@@ -1,0 +1,91 @@
+include ../ui-title/ui-title.pug
+include ../standart-button/standart-button.pug
+include ../arrow-buttons/arrow-buttons.pug
+include ../pie-chart/pie-chart.pug
+include ../donut-chart/donut-chart.pug
+include ../range-slider/range-slider.pug
+include ../step-slider/step-slider.pug
+include ../stages/stages.pug
+include ../form/form.pug
+include ../toggle/toggle.pug
+include ../tick-box/tick-box.pug
+include ../search/search.pug
+include ../drop-down/drop-down.pug
+include ../user-profile/user-profile.pug
+include ../news/news.pug
+include ../events/events.pug
+include ../location/location.pug
+include ../calendar/calendar.pug
+include ../messaging/messaging.pug
+include ../video-frame/video-frame.pug
+
+.kit
+ +ui-title("Standart buttons")(class="kit__ui-title")
+ .kit__button-container
+  +standart-button("Button", "button")(class="standart-button_size_s")
+  +standart-button("Button", "button")
+  +standart-button("Button", "button")(class="standart-button_color_tomato")
+  +standart-button("Button", "button")(class="standart-button_size_s standart-button_color_tomato")
+ +ui-title("Arrow buttons")(class="kit__ui-title")
+ .kit__arrow-container
+  +arrow-buttons
+  +arrow-buttons("","arrow-buttons__item_disabled","arrow-buttons__item_disabled")
+ +ui-title("Pecentages / Pie chart")(class="kit__ui-title")
+ .kit__charts-container
+  +pie-chart("0")
+  +pie-chart("38")
+  +pie-chart("62")
+  +pie-chart("89")
+  +donut-chart("30","30","30","10")
+ +ui-title("Sliders")(class="kit__ui-title")
+ .kit__sliders-container
+  +range-slider
+  +step-slider
+ +ui-title("Stages")(class="kit__ui-title")
+ .kit__stages-container
+  +stages(class="kit__stages")
+ +ui-title("Form elements")(class="kit__ui-title")
+ .kit__form-container
+  .kit__form-item
+   +form
+  .kit__form-item
+   +ui-title("Toggles")(class="kit__ui-title")
+   .kit__toggle-container
+    +toggle
+   +ui-title("Tick-boxes")(class="kit__ui-title")
+   .kit__tick-container   
+    +tick-box({
+      name: "tick-box1"
+    })
+    +tick-box({ 
+      isChecked: false,
+      name: "tick-box2"
+    })
+ .kit__social-items
+  .kit__social-item
+   +ui-title("Search / Drop down")(class="kit__ui-title")
+   .kit__search-container
+    +search
+    +drop-down("Choose an option")
+  .kit__social-item
+   +ui-title("User profile")(class="kit__ui-title")
+   .kit__profile-container
+    +user-profile("John Smith", "Ux Designer", "images/john_image.jpg")
+    +user-profile("Sarah Brown", "Developer", "images/sarah_image.jpg")
+ +ui-title("News & Events")(class="kit__ui-title")
+ .kit__news-container 
+  +news("images/news.jpg","It’s all going downhill", "24 August 2013", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")
+  +events("images/events.jpg", "24", "Aug", "This is the title", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+ +ui-title("Location")(class="kit__ui-title")
+ .kit__location-container
+  +location 
+ .kit__items
+  .kit__item
+   +ui-title("Calendar")(class="kit__ui-title")
+   +calendar
+  .kit__item
+   +ui-title("Messaging")(class="kit__ui-title")
+   +messaging
+ +ui-title("Video")(class="kit__ui-title")
+ +video-frame.kit__video-frame
+  

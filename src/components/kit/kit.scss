@@ -1,0 +1,107 @@
+@mixin container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.kit {
+    text-align: center;
+    max-width: 708px;
+    margin: 93px auto;
+    display: none;
+
+    &__button-container {
+        @include container;
+        max-width: 490px;
+
+    }
+
+    &__ui-title {
+        margin: 60px 0 36px 0;
+    }
+
+    &__arrow-container {
+        @include container;
+        max-width: 490px;
+
+    }
+
+    &__charts-container {
+        @include container;
+        max-width: 650px;
+
+    }
+
+    &__sliders-container {
+        @include container;
+        max-width: 700px;
+    }
+
+    &__stages-container {
+        @include container;
+        max-width: 708px;
+    }
+
+    &__stages {
+        margin: 0 0 0 -35px;
+    }
+
+    &__form-container {
+        @include container;
+        max-width: 708px;
+    }
+
+    &__toggle-container {
+       display:flex;
+       justify-content: center;
+    }
+
+    &__tick-container {
+        @include container;
+        max-width: 100px;
+    }
+
+    &__social-items {
+        display: flex;
+        max-width: 650px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    &__search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        height: 70px;
+    }
+
+    &__profile-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        height: 210px;
+    }
+
+    &__news-container {
+        @include container;
+        max-width: 650px;
+    }
+
+    &__location-container {
+       display: flex;
+       justify-content: center;
+    }
+
+    &__items {
+        @include container;
+        max-width: 650px;
+    }
+
+    &__video-frame {
+        margin: auto;
+    }
+}
+

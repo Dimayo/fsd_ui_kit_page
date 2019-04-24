@@ -1,9 +1,8 @@
 .toggle {
     position: relative;
     width: 90px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    display: flex;
+    justify-content: center;
 
     &__checkbox {
         display: none;
@@ -42,14 +41,14 @@
 
         &:before {
             content: "ON";
-            padding-left: 11px;
+            padding-right: 20px;
             background-color: #4eb7a8;
             color: #fff;
         }
 
         &:after {
             content: "OFF";
-            padding-right: 8px;
+            padding-right: 7px;
             background-color: #e5e5e5;
             color: #fff;
             text-align: right;
@@ -64,7 +63,7 @@
         position: absolute;
         top: 11%;
         bottom: 0;
-        right: 69px;
+        right: 52px;
         border-radius: 50%;
         transition: all 0.3s ease-in 0s;
     }
@@ -74,6 +73,6 @@
     }
 
     &__checkbox:checked+&__label &__switch {
-        right: 34px;
+        right: 19px;
     }
 }

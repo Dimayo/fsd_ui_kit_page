@@ -1,4 +1,4 @@
-window.initMap = function () {
+function initMap() {
 
     let myLatLng = {
         lat: 37.7974,
@@ -8,7 +8,7 @@ window.initMap = function () {
     let markerPos = {
         lat: 37.7955,
         lng: -122.41425
-    }
+    };
 
     let map = new google.maps.Map(document.querySelector('.location__map'), {
         center: myLatLng,
@@ -23,5 +23,4 @@ window.initMap = function () {
         title: 'Custom marker',
         icon: 'images/marker.png'
     });
-
-};
+}

@@ -1,13 +1,14 @@
 .search {
     width: 256px;
     position: relative;
+    height: 28px;
 
 
     &__term {
         float: left;
         width: 100%;
         background-color: #e5e5e5;
-        height: 27px;
+      height: 26px;
         padding-left: 13px;
         border-bottom-left-radius: 4px;
         border-top-left-radius: 4px;
