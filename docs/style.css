@@ -332,12 +332,6 @@
     background-repeat: no-repeat;
     margin: 0 25px 0 22px; }
 
-.gm-style-cc {
-  display: none !important; }
-
-.gm-style a[href^="https://maps.google.com/maps"] {
-  display: none !important; }
-
 .user-profile {
   display: flex;
   justify-content: space-between;
@@ -733,9 +727,10 @@
 
 .kit {
   text-align: center;
-  max-width: 708px;
+  width: 708px;
   margin: 93px auto;
-  display: none; }
+  display: none;
+  overflow: hidden; }
   .kit__button-container {
     display: flex;
     justify-content: space-around;

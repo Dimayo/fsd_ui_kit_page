@@ -192,7 +192,7 @@ eval("(function formValidation() {\n  var formName = document.querySelector('.fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("(function kitTransition() {\n  var pages = document.querySelectorAll(\".page\"),\n      kitLink = document.querySelector(\".home__link\"),\n      nav = document.querySelector(\".navigation\"),\n      kitPage = document.querySelector(\".kit\");\n  kitLink.addEventListener(\"click\", function () {\n    pages[0].style.display = \"none\";\n    kitPage.style.display = \"block\";\n    nav.style.display = \"none\";\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/home/home.js?");
+eval("(function kitTransition() {\n  var pages = document.querySelectorAll(\".page\"),\n      kitLink = document.querySelector(\".home__link\"),\n      nav = document.querySelector(\".navigation\"),\n      kitPage = document.querySelector(\".kit\");\n  kitLink.addEventListener(\"click\", function () {\n    pages[0].style.display = \"none\";\n    pages[1].style.display = \"none\";\n    pages[2].style.display = \"none\";\n    pages[3].style.display = \"none\";\n    kitPage.style.display = \"block\";\n    nav.style.display = \"none\";\n  });\n})();\n\n//# sourceURL=webpack:///./src/components/home/home.js?");
 
 /***/ }),
 
@@ -214,7 +214,7 @@ eval("module.exports = __webpack_require__.p + \"images/home.png\";\n\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function initMap() {\n  var myLatLng = {\n    lat: 37.7974,\n    lng: -122.4149\n  };\n  var markerPos = {\n    lat: 37.7955,\n    lng: -122.41425\n  };\n  var map = new google.maps.Map(document.querySelector('.location__map'), {\n    center: myLatLng,\n    scrollwheel: 1,\n    disableDefaultUI: 1,\n    zoom: 14.51\n  });\n  var marker = new google.maps.Marker({\n    position: markerPos,\n    map: map,\n    title: 'Custom marker',\n    icon: 'images/marker.png'\n  });\n}\n\n//# sourceURL=webpack:///./src/components/location/location.js?");
+eval("ymaps.ready(init);\n\nfunction init() {\n  var myMap = new ymaps.Map(\"map\", {\n    center: [37.7974, -122.4149],\n    zoom: 14.51,\n    controls: []\n  }, {\n    suppressMapOpenBlock: true\n  });\n  var myGeoObjects = [];\n  myGeoObjects = new ymaps.Placemark([37.7974, -122.4149], {\n    balloonContentBody: ''\n  }, {\n    iconLayout: 'default#image',\n    iconImageHref: 'images/marker.png',\n    iconImageSize: [56, 56],\n    iconImageOffset: [-35, -35]\n  });\n  var clusterer = new ymaps.Clusterer({\n    clusterDisableClickZoom: false,\n    clusterOpenBalloonOnClick: false\n  });\n  clusterer.add(myGeoObjects);\n  myMap.geoObjects.add(clusterer);\n  myMap.behaviors.disable('scrollZoom');\n}\n\n//# sourceURL=webpack:///./src/components/location/location.js?");
 
 /***/ }),
 

@@ -1,26 +1,33 @@
-function initMap() {
+ymaps.ready(init);
 
-    let myLatLng = {
-        lat: 37.7974,
-        lng: -122.4149
-    };
+function init() {
+    let myMap = new ymaps.Map("map", {
+        center: [37.7974, -122.4149],
+        zoom: 14.51,
+        controls: [],
 
-    let markerPos = {
-        lat: 37.7955,
-        lng: -122.41425
-    };
-
-    let map = new google.maps.Map(document.querySelector('.location__map'), {
-        center: myLatLng,
-        scrollwheel: 1,
-        disableDefaultUI: 1,
-        zoom: 14.51
+    }, {
+        suppressMapOpenBlock: true,
     });
 
-    let marker = new google.maps.Marker({
-        position: markerPos,
-        map: map,
-        title: 'Custom marker',
-        icon: 'images/marker.png'
+    let myGeoObjects = [];
+
+    myGeoObjects = new ymaps.Placemark([37.7974, -122.4149], {
+        balloonContentBody: '',
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'images/marker.png',
+        iconImageSize: [56, 56],
+        iconImageOffset: [-35, -35]
     });
+
+    let clusterer = new ymaps.Clusterer({
+        clusterDisableClickZoom: false,
+        clusterOpenBalloonOnClick: false,
+    });
+
+    clusterer.add(myGeoObjects);
+    myMap.geoObjects.add(clusterer);
+    myMap.behaviors.disable('scrollZoom');
+
 }
