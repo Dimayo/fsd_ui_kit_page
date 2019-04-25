@@ -10,9 +10,8 @@
     width: 708px;
     margin: 93px auto;
     display: none;
-    overflow: hidden;
+    overflow-x: hidden;
 
- 
     &__button-container {
         @include container;
         max-width: 490px;

@@ -730,7 +730,7 @@
   width: 708px;
   margin: 93px auto;
   display: none;
-  overflow: hidden; }
+  overflow-x: hidden; }
   .kit__button-container {
     display: flex;
     justify-content: space-around;
