@@ -13,6 +13,7 @@ import './components/search/search.js';
 import './components/calendar/calendar.js';
 import './components/video-frame/video-frame.js';
 
+import './components/body/favicon.png';
 import './components/home/home.png';
 import './components/user-profile/sarah_image.jpg';
 import './components/user-profile/john_image.jpg';
