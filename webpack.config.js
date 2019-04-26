@@ -7,10 +7,10 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        './src/index.js',
-        './src/index.scss'
-    ],
+    entry: {
+        index: './src/index.js',
+        uipage: './src/uipage.js',
+    },
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
@@ -22,7 +22,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'docs/'),
-        filename: 'bundle.js',
+        filename: '[name].js',
     },
     module: {
         rules: [{
@@ -74,7 +74,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: '[name].css'
         }),
         new CopyWebpackPlugin([{
                 from: './src/fonts',
@@ -87,7 +87,15 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             template: './src/index.pug',
-            filename: 'index.html'
+            filename: 'index.html',
+            inject: true,
+            chunks: ['index']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/uipage.pug',
+            filename: 'uipage.html',
+            inject: true,
+            chunks: ['uipage']
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',

@@ -3,15 +3,8 @@ import './components/body/body.js';
 import './components/standart-button/standart-button.js';
 import './components/navigation/navigation.js';
 import './components/form/form.js';
-import './components/home/home.js';
-import './components/pie-chart/pie-chart.js';
-import './components/donut-chart/donut-chart.js';
-import './components/range-slider/range-slider.js';
-import './components/step-slider/step-slider.js';
-import './components/stages/stages.js';
-import './components/search/search.js';
-import './components/calendar/calendar.js';
-import './components/video-frame/video-frame.js';
+
+import './scss/index.scss';
 
 import './components/body/favicon.png';
 import './components/home/home.png';
@@ -25,6 +18,7 @@ import './components/portfolio/fourth_project.jpg';
 import './components/location/marker.png';
 import './components/location/pin.png';
 import './components/location/target.png';
+import './components/news/news.jpg';
 import './components/search/search.png';
 import './components/events/events.jpg';
 import './components/messaging/camera.png';
