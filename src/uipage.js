@@ -1,3 +1,5 @@
+import './scss/uipage.scss';
+
 import './components/location/location.js';
 import './components/standart-button/standart-button.js';
 import './components/form/form.js';
@@ -10,4 +12,3 @@ import './components/search/search.js';
 import './components/calendar/calendar.js';
 import './components/video-frame/video-frame.js';
 
-import './scss/uipage.scss';

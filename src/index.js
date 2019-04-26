@@ -1,10 +1,10 @@
-import './components/location/location.js';
-import './components/body/body.js';
-import './components/standart-button/standart-button.js';
-import './components/navigation/navigation.js';
-import './components/form/form.js';
-
 import './scss/index.scss';
+
+import './components/body/body.js';
+import './components/navigation/navigation.js';
+import './components/standart-button/standart-button.js';
+import './components/form/form.js';
+import './components/location/location.js';
 
 import './components/body/favicon.png';
 import './components/home/home.png';
